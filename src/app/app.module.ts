@@ -12,6 +12,7 @@ import { TestRouteComponent } from './test-route/test-route.component';
 import { SampleDirectiveComponent } from './sample-directive/sample-directive.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BlueColoredDirective } from './blue-colored.directive';
+import { HostListenerComponent } from './host-listener/host-listener.component';
 
 const appRoutes: Routes = [{
   path:'testroute/:userName',
@@ -19,6 +20,9 @@ const appRoutes: Routes = [{
 },{
   path : 'sampledirective',
   component : SampleDirectiveComponent
+},{
+  path : 'hostlistener',
+  component : HostListenerComponent
 },{
   path : '**',
   component : PageNotFoundComponent
@@ -35,7 +39,8 @@ const appRoutes: Routes = [{
     TestRouteComponent,
     SampleDirectiveComponent,
     PageNotFoundComponent,
-    BlueColoredDirective
+    BlueColoredDirective,
+    HostListenerComponent
   ],
   imports: [
     RouterModule.forRoot(
