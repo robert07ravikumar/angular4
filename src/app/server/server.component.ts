@@ -11,7 +11,7 @@ export class ServerComponent{
     serverCreationStatus: String = 'no server crated';
     serverName:string  = 'Test server';
     serverCreated = false;
-    servers = ['test serve 1','test server 2'];
+    servers = ['test serve 1','test server 3'];
     
     constructor(){
         setTimeout(() => {
