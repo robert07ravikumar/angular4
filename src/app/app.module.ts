@@ -13,6 +13,7 @@ import { SampleDirectiveComponent } from './sample-directive/sample-directive.co
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BlueColoredDirective } from './blue-colored.directive';
 import { HostListenerComponent } from './host-listener/host-listener.component';
+import { NgIfSampleComponent } from './ng-if-sample/ng-if-sample.component';
 
 const appRoutes: Routes = [{
   path:'testroute/:userName',
@@ -23,6 +24,9 @@ const appRoutes: Routes = [{
 },{
   path : 'hostlistener',
   component : HostListenerComponent
+},{
+  path : 'ngifsample',
+  component : NgIfSampleComponent
 },{
   path : '**',
   component : PageNotFoundComponent
@@ -40,7 +44,8 @@ const appRoutes: Routes = [{
     SampleDirectiveComponent,
     PageNotFoundComponent,
     BlueColoredDirective,
-    HostListenerComponent
+    HostListenerComponent,
+    NgIfSampleComponent
   ],
   imports: [
     RouterModule.forRoot(

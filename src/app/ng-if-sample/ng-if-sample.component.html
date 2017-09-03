@@ -1,0 +1,12 @@
+<p>
+  ng-if-sample works!
+</p>
+  <div *ngIf="visible;then evenClicked else oddClicked"> if shown </div>
+  <button (click)="toggleDiv()">Toggle</button>
+
+<ng-template #oddClicked>odd number of clicks</ng-template>
+<ng-template #evenClicked>even number of clicks</ng-template>
+
+<div *ngIf="myFavLang.frontend; let frontEndLanguages">
+  front end languaes --- {{frontEndLanguages.join('-')}}
+</div>
